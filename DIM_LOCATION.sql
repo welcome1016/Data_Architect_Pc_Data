@@ -1,0 +1,5 @@
+SELECT Distinct [Continent]
+      ,[Country_or_State]
+      ,[Province_or_City]
+     into [Pc_Data_Staging].[dbo].[pc_data_Dim_Location]
+  FROM [Pc_Data_Staging].[dbo].[pc_data _RawData]
