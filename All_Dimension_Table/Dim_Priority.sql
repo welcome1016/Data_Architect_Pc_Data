@@ -1,4 +1,10 @@
-SELECT Distinct
-      [Priority]
-     into [Pc_Data_Staging].[dbo].[pc_data_Dim_Priority]
-  FROM [Pc_Data_Staging].[dbo].[pc_data _RawData]
+drop table if exists [dbo].[Dim_Priority]
+CREATE TABLE [Pc_Data_Staging].[dbo].[Dim_Priority](
+	[PriorityID] [int] IDENTITY(1,1) Primary key,
+	[Priority] [nvarchar](50) NOT NULL
+)
+insert into [Pc_Data_Staging].[dbo].[Dim_Priority] ([Priority])
+select distinct [Priority]
+from [Pc_Data_Staging].[dbo].[pc_data _RawData]
+
+
