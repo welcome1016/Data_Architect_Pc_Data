@@ -11,3 +11,4 @@ CREATE TABLE [Pc_Data_Staging].[dbo].[Dim_Customer](
 insert into [Pc_Data_Staging].[dbo].[Dim_Customer] ([Customer_Name], [Customer_Surname], [Customer_Contact_Number], [Customer_Email_Address])
 select distinct [Customer_Name], [Customer_Surname], [Customer_Contact_Number], [Customer_Email_Address]
 from [Pc_Data_Staging].[dbo].[pc_data _RawData]
+select * from [Pc_Data_Staging].[dbo].[Dim_Customer]
