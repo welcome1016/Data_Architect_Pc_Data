@@ -9,3 +9,4 @@ insert into [Pc_Data_Staging].[dbo].[Dim_Date] ([Purchase_Date], [Ship_Date])
 select distinct [Purchase_Date], [Ship_Date]
 from [Pc_Data_Staging].[dbo].[pc_data _RawData]
 
+

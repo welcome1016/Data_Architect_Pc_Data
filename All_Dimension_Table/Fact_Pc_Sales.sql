@@ -78,4 +78,4 @@ join [dbo].[Dim_Location] as i on s.Continent = i.continent
 							and s.Province_or_City = i.Province_or_City
 
 				
-				select * from [dbo].[FACT_PC_SALES]
+				select* from [dbo].[FACT_PC_SALES]
