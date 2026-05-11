@@ -1,7 +1,7 @@
 
 drop table if exists [Pc_Data_Staging].[dbo].[Dim_Channel]
 CREATE TABLE [Pc_Data_Staging].[dbo].[Dim_Channel](
-	[Channel_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Channel_ID] [int] IDENTITY(1,1) primary key NOT NULL,
 	[Channel] [nvarchar](50) NOT NULL
 ) 
 insert into [Pc_Data_Staging].[dbo].[Dim_Channel] ([Channel])
